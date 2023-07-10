@@ -35,6 +35,6 @@ test('Check for getUrlFromHtml function', () => {
     </html>
     `
     const actual = getUrlFromHtml(input)
-    const expected = ["blog.boot.dev", 'blog.booty.dev', 'blog.booti.dev', 'blog.booty.dev']
-    expect(actual).toBe(actual)
+    const expected = ["blog.boot.dev", "blog.booty.dev", "blog.booti.dev", "blog.booty.dev",]
+    expect(actual).toStrictEqual(expected)
 })
